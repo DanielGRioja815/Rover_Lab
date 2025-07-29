@@ -2,12 +2,10 @@
 
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/clearpath/moose/protos/Moose.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/nasa/protos/Sojourner.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/adept/pioneer3/protos/Pioneer3at.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Soil.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/rocks/protos/Rock.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/vehicles/protos/abstract/VehicleWheel.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/obstacles/protos/Ramp30deg.proto"
 
 WorldInfo {
   info [
@@ -24,8 +22,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation 0.054081396320810333 -0.03804855308162702 -0.9978113600177071 4.365632498651146
-  position 4.1005240477770695 -9.088352462017392 1.6083507241724466
+  orientation 0.08061681809105556 -0.08824226353651667 -0.9928314215247347 4.795407679671626
+  position 2.6471904621169284 -12.05615973879565 0.9237573067376846
 }
 TexturedBackground {
   texture "mars"
@@ -60,10 +58,17 @@ DEF GROUND Solid {
   locked TRUE
 }
 Robot {
-  translation 2.91 -2.78 1.12
+  translation 2.69 -3.66 0.59
   children [
+    Lidar {
+      translation 0 0 0.1
+      fieldOfView 3.14
+      numberOfLayers 1
+      minRange 0.7
+      maxRange 2
+    }
     DEF RW_1 Pose {
-      translation 0.360001 -0.419995 -0.1
+      translation 0.360001 -0.419995 -0.2
       rotation 0 0 1 3.1415
       children [
         HingeJoint {
@@ -75,7 +80,7 @@ Robot {
           }
           device [
             RotationalMotor {
-              name "right motor 1"
+              name "right_motor_1"
               maxVelocity 26
               maxTorque 1000
             }
@@ -91,7 +96,7 @@ Robot {
       ]
     }
     DEF RW_2 Pose {
-      translation 2.65359e-08 -0.42 -0.1
+      translation 2.65359e-08 -0.42 -0.2
       rotation 0 0 1 3.14159
       children [
         HingeJoint {
@@ -103,7 +108,7 @@ Robot {
           }
           device [
             RotationalMotor {
-              name "right motor 2"
+              name "right_motor_2"
               maxVelocity 26
               maxTorque 1000
             }
@@ -120,7 +125,7 @@ Robot {
       ]
     }
     DEF RW_3 Pose {
-      translation -0.36 -0.42 -0.1
+      translation -0.36 -0.42 -0.2
       rotation 0 0 1 3.14159
       children [
         HingeJoint {
@@ -132,7 +137,7 @@ Robot {
           }
           device [
             RotationalMotor {
-              name "right motor 3"
+              name "right_motor_3"
               maxVelocity 26
               maxTorque 1000
             }
@@ -148,8 +153,8 @@ Robot {
         }
       ]
     }
-    DEF RW_4 Pose {
-      translation 0.36 0.420005 -0.1
+    DEF LW_1 Pose {
+      translation 0.36 0.420005 -0.2
       children [
         HingeJoint {
           jointParameters HingeJointParameters {
@@ -160,7 +165,7 @@ Robot {
           }
           device [
             RotationalMotor {
-              name "right motor 1"
+              name "left_motor_1"
               maxVelocity 26
               maxTorque 1000
             }
@@ -176,8 +181,8 @@ Robot {
         }
       ]
     }
-    DEF RW_5 Pose {
-      translation 2.65359e-08 0.42 -0.1
+    DEF LW_2 Pose {
+      translation 2.65359e-08 0.42 -0.2
       children [
         HingeJoint {
           jointParameters HingeJointParameters {
@@ -188,7 +193,7 @@ Robot {
           }
           device [
             RotationalMotor {
-              name "right motor 2"
+              name "left_motor_2"
               maxVelocity 26
               maxTorque 1000
             }
@@ -204,8 +209,8 @@ Robot {
         }
       ]
     }
-    DEF RW_6 Pose {
-      translation -0.36 0.42 -0.1
+    DEF LW_3 Pose {
+      translation -0.36 0.42 -0.2
       children [
         HingeJoint {
           jointParameters HingeJointParameters {
@@ -216,7 +221,7 @@ Robot {
           }
           device [
             RotationalMotor {
-              name "right motor 3"
+              name "left_motor_3"
               maxVelocity 26
               maxTorque 1000
             }
@@ -246,18 +251,7 @@ Robot {
   boundingObject USE BODY
   physics Physics {
   }
-  controller "four_wheeled_collision_avoidance"
-}
-Moose {
-  translation -2.66 -1.31 1.03
-  controller "moose_path_following"
-}
-Sojourner {
-  translation 0 -3.87 0.237
-}
-Pioneer3at {
-  translation 2.91 0 0
-  controller "pioneer3at_obstacle_avoidance_with_lidar"
+  controller "Rover_Controller"
 }
 Rock {
   translation -1.03513 -0.62354 -0.0885
@@ -266,14 +260,14 @@ Rock {
   color 0.8 0.35 0.3
 }
 Rock {
-  translation 3.63827 -0.283811 -0.4038
+  translation 8.37813 -2.13103 -0.4038
   rotation 0 0 1 1.92062
   name "rock (1)"
   type "flat"
   color 0.8 0.4 0.3
 }
 Rock {
-  translation 0.47519 -4.05664 -0.0979
+  translation 4.41107 -4.25211 -0.5979
   rotation 0 0 1 1.44753
   name "rock (2)"
   type "flat"
@@ -296,4 +290,8 @@ Rock {
   rotation 0 0 -1 1.0472
   name "rock (5)"
   color 0.9 0.4 0.3
+}
+Ramp30deg {
+  translation 7.87248 -3.48 -1.43142
+  rotation 0 -1 0 -0.261795307179586
 }
