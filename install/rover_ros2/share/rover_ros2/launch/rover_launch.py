@@ -1,1 +1,1 @@
-/home/danielgrioja/Proyectos/Rover_Lab/build/rover_ros2/launch/rover_launch.py
+/home/danielgrioja/LAB/Rover_Lab/build/rover_ros2/launch/rover_launch.py

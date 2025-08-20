@@ -1,0 +1,19 @@
+[0.828s] Invoking command in '/home/danielgrioja/LAB/Rover_Lab/build/my_package': PYTHONPATH=/home/danielgrioja/LAB/Rover_Lab/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danielgrioja/LAB/Rover_Lab/install/my_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/danielgrioja/LAB/Rover_Lab/build/my_package/build --no-deps symlink_data
+[1.092s] running develop
+[1.244s] running egg_info
+[1.244s] writing my_package.egg-info/PKG-INFO
+[1.245s] writing dependency_links to my_package.egg-info/dependency_links.txt
+[1.247s] writing entry points to my_package.egg-info/entry_points.txt
+[1.248s] writing requirements to my_package.egg-info/requires.txt
+[1.249s] writing top-level names to my_package.egg-info/top_level.txt
+[1.255s] reading manifest file 'my_package.egg-info/SOURCES.txt'
+[1.255s] writing manifest file 'my_package.egg-info/SOURCES.txt'
+[1.256s] running build_ext
+[1.256s] Creating /home/danielgrioja/LAB/Rover_Lab/install/my_package/lib/python3.10/site-packages/my-package.egg-link (link to .)
+[1.260s] Installing my_robot_driver script to /home/danielgrioja/LAB/Rover_Lab/install/my_package/lib/my_package
+[1.260s] 
+[1.260s] Installed /home/danielgrioja/LAB/Rover_Lab/build/my_package
+[1.260s] running symlink_data
+[1.260s] symbolically linking /home/danielgrioja/LAB/Rover_Lab/build/my_package/resource/my_package -> /home/danielgrioja/LAB/Rover_Lab/install/my_package/share/ament_index/resource_index/packages
+[1.266s] error: [Errno 17] File exists: '/home/danielgrioja/LAB/Rover_Lab/build/my_package/resource/my_package' -> '/home/danielgrioja/LAB/Rover_Lab/install/my_package/share/ament_index/resource_index/packages/my_package'
+[1.290s] Invoked command in '/home/danielgrioja/LAB/Rover_Lab/build/my_package' returned '1': PYTHONPATH=/home/danielgrioja/LAB/Rover_Lab/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danielgrioja/LAB/Rover_Lab/install/my_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/danielgrioja/LAB/Rover_Lab/build/my_package/build --no-deps symlink_data

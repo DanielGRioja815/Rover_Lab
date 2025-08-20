@@ -4,6 +4,7 @@ setup.py
 launch/robot_launch.py
 my_package/__init__.py
 my_package/my_robot_driver.py
+my_package/obstacle_avoider.py
 my_package.egg-info/PKG-INFO
 my_package.egg-info/SOURCES.txt
 my_package.egg-info/dependency_links.txt

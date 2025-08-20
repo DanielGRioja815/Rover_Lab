@@ -1,0 +1,19 @@
+[0.824s] Invoking command in '/home/danielgrioja/LAB/Rover_Lab/build/rover_ros2': PYTHONPATH=/home/danielgrioja/LAB/Rover_Lab/build/rover_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danielgrioja/LAB/Rover_Lab/install/rover_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/danielgrioja/LAB/Rover_Lab/build/rover_ros2/build --no-deps symlink_data
+[1.094s] running develop
+[1.239s] running egg_info
+[1.239s] writing rover_ros2.egg-info/PKG-INFO
+[1.240s] writing dependency_links to rover_ros2.egg-info/dependency_links.txt
+[1.241s] writing entry points to rover_ros2.egg-info/entry_points.txt
+[1.242s] writing requirements to rover_ros2.egg-info/requires.txt
+[1.243s] writing top-level names to rover_ros2.egg-info/top_level.txt
+[1.250s] reading manifest file 'rover_ros2.egg-info/SOURCES.txt'
+[1.251s] writing manifest file 'rover_ros2.egg-info/SOURCES.txt'
+[1.252s] running build_ext
+[1.253s] Creating /home/danielgrioja/LAB/Rover_Lab/install/rover_ros2/lib/python3.10/site-packages/rover-ros2.egg-link (link to .)
+[1.258s] error: [Errno 17] File exists: '/home/danielgrioja/LAB/Rover_Lab/build/rover_ros2/launch/rover_launch.py' -> '/home/danielgrioja/LAB/Rover_Lab/install/rover_ros2/share/rover_ros2/launch/rover_launch.py'
+[1.258s] Installing arm_controller script to /home/danielgrioja/LAB/Rover_Lab/install/rover_ros2/lib/Rover_Ros
+[1.258s] Installing rover_controller script to /home/danielgrioja/LAB/Rover_Lab/install/rover_ros2/lib/Rover_Ros
+[1.258s] 
+[1.259s] Installed /home/danielgrioja/LAB/Rover_Lab/build/rover_ros2
+[1.259s] running symlink_data
+[1.259s] symbolically linking /home/danielgrioja/LAB/Rover_Lab/build/rover_ros2/launch/rover_launch.py -> /home/danielgrioja/LAB/Rover_Lab/install/rover_ros2/share/rover_ros2/launch

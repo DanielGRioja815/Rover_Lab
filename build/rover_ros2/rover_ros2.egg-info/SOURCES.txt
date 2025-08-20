@@ -4,8 +4,8 @@ setup.py
 launch/rover_launch.py
 resource/rover_ros2
 rover_ros2/__init__.py
-rover_ros2/arm_controller.py
-rover_ros2/rover_controller.py
+rover_ros2/arm_node.py
+rover_ros2/rover_node.py
 rover_ros2.egg-info/PKG-INFO
 rover_ros2.egg-info/SOURCES.txt
 rover_ros2.egg-info/dependency_links.txt

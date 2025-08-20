@@ -1,0 +1,1 @@
+error: [Errno 17] File exists: '/home/danielgrioja/LAB/Rover_Lab/build/rover_ros2/launch/rover_launch.py' -> '/home/danielgrioja/LAB/Rover_Lab/install/rover_ros2/share/rover_ros2/launch/rover_launch.py'
