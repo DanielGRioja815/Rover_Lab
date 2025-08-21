@@ -252,7 +252,7 @@ Robot {
   boundingObject USE BODY
   physics Physics {
   }
-  controller "Rover_Controller"
+  controller "<extern>"
 }
 Rock {
   translation 4.40953 -6.34652 -0.5885
@@ -1714,7 +1714,7 @@ Robot {
   boundingObject USE R_CHASIS
   physics Physics {
   }
-  controller "Rover_Controller"
+  controller "<extern>"
 }
 Ramp30deg {
   translation 7.87248 -3.48 -1.43142

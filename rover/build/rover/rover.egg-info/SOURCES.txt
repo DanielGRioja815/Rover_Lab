@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+resource/rover
+rover/__init__.py
+rover/rover_evasor.py
+rover/rover_ros2.py
+rover.egg-info/PKG-INFO
+rover.egg-info/SOURCES.txt
+rover.egg-info/dependency_links.txt
+rover.egg-info/entry_points.txt
+rover.egg-info/requires.txt
+rover.egg-info/top_level.txt
+rover.egg-info/zip-safe
