@@ -1,4 +1,0 @@
-[console_scripts]
-arm_controller = rover_ros2.arm_controller:main
-rover_controller = rover_ros2.rover_controller:main
-

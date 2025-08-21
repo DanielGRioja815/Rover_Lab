@@ -1,1 +1,1 @@
-/home/danielgrioja/LAB/Rover_Lab/my_package/launch/robot_launch.py
+/home/danielgrioja/Proyectos/Rover_Lab/my_package/launch/robot_launch.py

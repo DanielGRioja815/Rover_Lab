@@ -1,0 +1,3 @@
+[console_scripts]
+rover_ros2 = rover.rover_ros2:main
+

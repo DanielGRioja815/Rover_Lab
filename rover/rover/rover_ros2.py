@@ -1,6 +1,3 @@
-
-
-
 """Rover_Node controller."""
 
 import rclpy
@@ -14,13 +11,13 @@ OBSTACLE_MIN = 0.75   # metros
 OBSTACLE_MAX = 1.8    # metros
 
 class RoverRos2:
-    def __init__(self):
-        """Initialize the Rover ROS2 controller."""
-        rclpy.init()
+    def init(self, webots_node, properties):
+        """Initialize the Rover ROS2 controller for Webots."""
+        self.robot = webots_node.robot  # Acceso al robot Webots si lo necesitas
+        rclpy.init(args=None)
         self.node = rclpy.create_node('rover_ros2')
         self.publisher = self.node.create_publisher(Twist, 'cmd_vel', 10)
         self.lidar_subscriber = self.node.create_subscription(LaserScan, 'scan', self.lidar_callback, 10)
-        self.timer = self.node.create_timer(0.1, self.publish_velocity)
         self.obstacle_detected = False
         self.turn_left = True
 
@@ -61,7 +58,8 @@ class RoverRos2:
             self.node.get_logger().info("No obstacles, moving forward")
         self.publisher.publish(msg)
 
-    def spin(self):
-        """Spin the node."""
-        rclpy.spin(self.node)
+    def step(self):
+        """Called every simulation step by Webots."""
+        rclpy.spin_once(self.node, timeout_sec=0)
+        self.publish_velocity()
 

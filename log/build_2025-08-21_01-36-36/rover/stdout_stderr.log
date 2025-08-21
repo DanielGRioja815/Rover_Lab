@@ -1,0 +1,21 @@
+running develop
+running egg_info
+writing rover.egg-info/PKG-INFO
+writing dependency_links to rover.egg-info/dependency_links.txt
+writing entry points to rover.egg-info/entry_points.txt
+writing requirements to rover.egg-info/requires.txt
+writing top-level names to rover.egg-info/top_level.txt
+reading manifest file 'rover.egg-info/SOURCES.txt'
+writing manifest file 'rover.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/danielgrioja/Proyectos/Rover_Lab/install/rover/lib/python3.10/site-packages/rover.egg-link (link to .)
+Installing rover_ros2 script to /home/danielgrioja/Proyectos/Rover_Lab/install/rover/lib/rover
+
+Installed /home/danielgrioja/Proyectos/Rover_Lab/build/rover
+running symlink_data
+creating /home/danielgrioja/Proyectos/Rover_Lab/install/rover/share/rover/launch
+symbolically linking /home/danielgrioja/Proyectos/Rover_Lab/build/rover/launch/rover_launch.py -> /home/danielgrioja/Proyectos/Rover_Lab/install/rover/share/rover/launch
+creating /home/danielgrioja/Proyectos/Rover_Lab/install/rover/share/rover/worlds
+symbolically linking /home/danielgrioja/Proyectos/Rover_Lab/build/rover/worlds/4_wheeled_robot.wbt -> /home/danielgrioja/Proyectos/Rover_Lab/install/rover/share/rover/worlds
+creating /home/danielgrioja/Proyectos/Rover_Lab/install/rover/share/rover/resource
+symbolically linking /home/danielgrioja/Proyectos/Rover_Lab/build/rover/resource/my_rover.urdf -> /home/danielgrioja/Proyectos/Rover_Lab/install/rover/share/rover/resource

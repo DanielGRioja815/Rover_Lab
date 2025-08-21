@@ -1,1 +1,0 @@
-/home/danielgrioja/LAB/Rover_Lab/rover_ros2/setup.py

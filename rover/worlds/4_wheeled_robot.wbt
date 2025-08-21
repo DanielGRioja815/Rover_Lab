@@ -25,6 +25,7 @@ WorldInfo {
 Viewpoint {
   orientation -0.2150483472591894 -0.10220080293450177 0.9712410639077377 4.006499823392912
   position 16.07682285725622 8.115115027760956 4.242776830854332
+  follow "robot(1)"
 }
 TexturedBackground {
   texture "mars"
@@ -57,202 +58,6 @@ DEF GROUND Solid {
   name "ground"
   boundingObject USE GROUND_SHAPE
   locked TRUE
-}
-Robot {
-  translation 2.69 -3.66 0.59
-  children [
-    Lidar {
-      translation 0 0 0.1
-      fieldOfView 3.14
-      numberOfLayers 1
-      minRange 0.7
-      maxRange 2
-    }
-    DEF RW_1 Pose {
-      translation 0.360001 -0.419995 -0.2
-      rotation 0 0 1 3.1415
-      children [
-        HingeJoint {
-          jointParameters HingeJointParameters {
-            axis 0 -1 0
-            suspensionSpringConstant 100000
-            suspensionDampingConstant 100000
-            suspensionAxis 0 0 1
-          }
-          device [
-            RotationalMotor {
-              name "right_motor_1"
-              maxVelocity 26
-              maxTorque 1000
-            }
-          ]
-          endPoint Slot {
-            type "vehicle wheel"
-            endPoint VehicleWheel {
-              thickness 0.15
-              tireRadius 0.13
-            }
-          }
-        }
-      ]
-    }
-    DEF RW_2 Pose {
-      translation 2.65359e-08 -0.42 -0.2
-      rotation 0 0 1 3.14159
-      children [
-        HingeJoint {
-          jointParameters HingeJointParameters {
-            axis 0 -1 0
-            suspensionSpringConstant 100000
-            suspensionDampingConstant 100000
-            suspensionAxis 0 0 1
-          }
-          device [
-            RotationalMotor {
-              name "right_motor_2"
-              maxVelocity 26
-              maxTorque 1000
-            }
-          ]
-          endPoint Slot {
-            type "vehicle wheel"
-            endPoint VehicleWheel {
-              name "vehicle wheel(1)"
-              thickness 0.15
-              tireRadius 0.13
-            }
-          }
-        }
-      ]
-    }
-    DEF RW_3 Pose {
-      translation -0.36 -0.42 -0.2
-      rotation 0 0 1 3.14159
-      children [
-        HingeJoint {
-          jointParameters HingeJointParameters {
-            axis 0 -1 0
-            suspensionSpringConstant 100000
-            suspensionDampingConstant 100000
-            suspensionAxis 0 0 1
-          }
-          device [
-            RotationalMotor {
-              name "right_motor_3"
-              maxVelocity 26
-              maxTorque 1000
-            }
-          ]
-          endPoint Slot {
-            type "vehicle wheel"
-            endPoint VehicleWheel {
-              name "vehicle wheel(2)"
-              thickness 0.15
-              tireRadius 0.13
-            }
-          }
-        }
-      ]
-    }
-    DEF LW_1 Pose {
-      translation 0.36 0.420005 -0.2
-      children [
-        HingeJoint {
-          jointParameters HingeJointParameters {
-            axis 0 -1 0
-            suspensionSpringConstant 100000
-            suspensionDampingConstant 100000
-            suspensionAxis 0 0 1
-          }
-          device [
-            RotationalMotor {
-              name "left_motor_1"
-              maxVelocity 26
-              maxTorque 1000
-            }
-          ]
-          endPoint Slot {
-            type "vehicle wheel"
-            endPoint VehicleWheel {
-              name "vehicle wheel(3)"
-              thickness 0.15
-              tireRadius 0.13
-            }
-          }
-        }
-      ]
-    }
-    DEF LW_2 Pose {
-      translation 2.65359e-08 0.42 -0.2
-      children [
-        HingeJoint {
-          jointParameters HingeJointParameters {
-            axis 0 -1 0
-            suspensionSpringConstant 100000
-            suspensionDampingConstant 100000
-            suspensionAxis 0 0 1
-          }
-          device [
-            RotationalMotor {
-              name "left_motor_2"
-              maxVelocity 26
-              maxTorque 1000
-            }
-          ]
-          endPoint Slot {
-            type "vehicle wheel"
-            endPoint VehicleWheel {
-              name "vehicle wheel(4)"
-              thickness 0.15
-              tireRadius 0.13
-            }
-          }
-        }
-      ]
-    }
-    DEF LW_3 Pose {
-      translation -0.36 0.42 -0.2
-      children [
-        HingeJoint {
-          jointParameters HingeJointParameters {
-            axis 0 -1 0
-            suspensionSpringConstant 100000
-            suspensionDampingConstant 100000
-            suspensionAxis 0 0 1
-          }
-          device [
-            RotationalMotor {
-              name "left_motor_3"
-              maxVelocity 26
-              maxTorque 1000
-            }
-          ]
-          endPoint Slot {
-            type "vehicle wheel"
-            endPoint VehicleWheel {
-              name "vehicle wheel(5)"
-              thickness 0.15
-              tireRadius 0.13
-            }
-          }
-        }
-      ]
-    }
-    DEF BODY Shape {
-      appearance PBRAppearance {
-        baseColor 0.3 0.6 0.9
-        roughness 1
-        metalness 0
-      }
-      geometry Box {
-        size 1 0.7 0.3
-      }
-    }
-  ]
-  boundingObject USE BODY
-  physics Physics {
-  }
-  controller "<extern>"
 }
 Rock {
   translation 4.40953 -6.34652 -0.5885
@@ -1714,7 +1519,7 @@ Robot {
   boundingObject USE R_CHASIS
   physics Physics {
   }
-  controller "<extern>"
+  controller "my_rover_driver"
 }
 Ramp30deg {
   translation 7.87248 -3.48 -1.43142
