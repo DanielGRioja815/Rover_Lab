@@ -14,7 +14,7 @@ def generate_launch_description():
         world=os.path.join(package_dir, 'worlds', '4_wheeled_robot.wbt')
     )
 
-    rover_ros2 = WebotsController(
+    my_rover_driver = WebotsController(
         robot_name='robot(1)',
         parameters=[
             {'robot_description': robot_description_path},
@@ -23,7 +23,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         webots,
-        rover_ros2,
+        my_rover_driver,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
                 target_action=webots,

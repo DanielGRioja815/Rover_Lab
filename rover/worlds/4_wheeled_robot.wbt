@@ -76,7 +76,7 @@ Robot {
       maxRange 2
     }
     DEF RW_1 Pose {
-      translation 0.360001 -0.419995 -0.2
+      translation 0.360001 -0.42 -0.2
       rotation 0 0 1 3.1415
       children [
         HingeJoint {
@@ -162,7 +162,7 @@ Robot {
       ]
     }
     DEF LW_1 Pose {
-      translation 0.36 0.420005 -0.2
+      translation 0.36 0.42 -0.2
       children [
         HingeJoint {
           jointParameters HingeJointParameters {
@@ -1519,7 +1519,7 @@ Robot {
   boundingObject USE R_CHASIS
   physics Physics {
   }
-  controller "my_rover_driver"
+  controller "<extern>"
 }
 Ramp30deg {
   translation 7.87248 -3.48 -1.43142
