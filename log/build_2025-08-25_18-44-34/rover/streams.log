@@ -1,0 +1,17 @@
+[0.987s] Invoking command in '/home/danielgrioja/LAB/Rover_Lab/build/rover': PYTHONPATH=/home/danielgrioja/LAB/Rover_Lab/build/rover/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danielgrioja/LAB/Rover_Lab/install/rover/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/danielgrioja/LAB/Rover_Lab/build/rover/build --no-deps symlink_data
+[1.258s] running develop
+[1.432s] running egg_info
+[1.433s] writing rover.egg-info/PKG-INFO
+[1.433s] writing dependency_links to rover.egg-info/dependency_links.txt
+[1.433s] writing entry points to rover.egg-info/entry_points.txt
+[1.434s] writing requirements to rover.egg-info/requires.txt
+[1.434s] writing top-level names to rover.egg-info/top_level.txt
+[1.440s] reading manifest file 'rover.egg-info/SOURCES.txt'
+[1.444s] writing manifest file 'rover.egg-info/SOURCES.txt'
+[1.447s] running build_ext
+[1.447s] Creating /home/danielgrioja/LAB/Rover_Lab/install/rover/lib/python3.10/site-packages/rover.egg-link (link to .)
+[1.449s] Installing my_rover_driver script to /home/danielgrioja/LAB/Rover_Lab/install/rover/lib/rover
+[1.449s] 
+[1.449s] Installed /home/danielgrioja/LAB/Rover_Lab/build/rover
+[1.449s] running symlink_data
+[1.485s] Invoked command in '/home/danielgrioja/LAB/Rover_Lab/build/rover' returned '0': PYTHONPATH=/home/danielgrioja/LAB/Rover_Lab/build/rover/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danielgrioja/LAB/Rover_Lab/install/rover/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/danielgrioja/LAB/Rover_Lab/build/rover/build --no-deps symlink_data

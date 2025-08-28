@@ -1,6 +1,12 @@
 <?xml version="1.0" ?>
 <robot name="robot(1)">
     <webots>
+        <device reference="lidar" type="Lidar">
+            <ros>
+                <topicName>/robot_1_/lidar</topicName>
+                <alwaysOn>true</alwaysOn>
+            </ros>
+        </device>
         <plugin type="rover.my_rover_driver.MyRoverDriver" />
     </webots>
 </robot>

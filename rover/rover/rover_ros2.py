@@ -1,6 +1,7 @@
 """Rover_Node controller."""
 
 import rclpy
+from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from sensor_msgs.msg import LaserScan
 
@@ -10,14 +11,15 @@ TURN_COEFFICIENT = 4.0
 OBSTACLE_MIN = 0.75   # metros
 OBSTACLE_MAX = 1.8    # metros
 
-class RoverRos2:
-    def init(self, webots_node, properties):
+class RoverRos2(Node):
+    """Rover ROS2 controller for Webots."""
+    def __init__(self):
         """Initialize the Rover ROS2 controller for Webots."""
-        self.robot = webots_node.robot  # Acceso al robot Webots si lo necesitas
-        rclpy.init(args=None)
-        self.node = rclpy.create_node('rover_ros2')
-        self.publisher = self.node.create_publisher(Twist, 'cmd_vel', 10)
-        self.lidar_subscriber = self.node.create_subscription(LaserScan, 'scan', self.lidar_callback, 10)
+        super().__init__("rover_ros2")
+        
+        self.publisher = self.create_publisher(Twist, 'cmd_vel', 10)
+        self.lidar_subscriber = self.create_subscription(LaserScan, '/robot_1_/lidar', self.lidar_callback, 10)
+        
         self.obstacle_detected = False
         self.turn_left = True
 
@@ -40,26 +42,30 @@ class RoverRos2:
             avg_right = sum(right_ranges) / len(right_ranges)
             self.turn_left = avg_left > avg_right
 
-    def publish_velocity(self):
-        """Publish velocity command."""
-        msg = Twist()
+        command_msg = Twist()
         if self.obstacle_detected:
-            if self.turn_left:
-                msg.linear.x = MAX_SPEED * 0.5
-                msg.angular.z = 1.0
-                self.node.get_logger().info("Obstacle detected, turning left")
+            if self.turn_left and self.turn_left:
+                command_msg.linear.x = -MAX_SPEED * 0.1
+                command_msg.angular.z = 0.0
+            elif self.turn_left:
+                command_msg.linear.x = MAX_SPEED * 0.1
+                command_msg.angular.z = 1.0                
             else:
-                msg.linear.x = MAX_SPEED * 0.5
-                msg.angular.z = -1.0
-                self.node.get_logger().info("Obstacle detected, turning right")
+                command_msg.linear.x = MAX_SPEED * 0.1
+                command_msg.angular.z = -1.0
         else:
-            msg.linear.x = MAX_SPEED * 0.5
-            msg.angular.z = 0.0
-            self.node.get_logger().info("No obstacles, moving forward")
-        self.publisher.publish(msg)
+            command_msg.linear.x = MAX_SPEED * 0.1
+            command_msg.angular.z = 0.0
+        self.publisher.publish(command_msg)
 
-    def step(self):
-        """Called every simulation step by Webots."""
-        rclpy.spin_once(self.node, timeout_sec=0)
-        self.publish_velocity()
 
+def main():
+    """Main entry point for the node."""
+    rclpy.init()
+    rover = RoverRos2()
+    rclpy.spin(rover)
+    rover.node.destroy_node()
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()

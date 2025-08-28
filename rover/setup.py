@@ -23,6 +23,7 @@ setup(
     entry_points={
         'console_scripts': [
             'my_rover_driver = rover.my_rover_driver:main',
+            'rover_ros2 = rover.rover_ros2:main'
         ],
     },
 )

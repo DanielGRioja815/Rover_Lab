@@ -1,0 +1,18 @@
+[1.657s] Invoking command in '/home/danielgrioja/LAB/Rover_Lab/build/rover': PYTHONPATH=/home/danielgrioja/LAB/Rover_Lab/build/rover/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danielgrioja/LAB/Rover_Lab/install/rover/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/danielgrioja/LAB/Rover_Lab/build/rover/build --no-deps symlink_data
+[2.025s] running develop
+[2.260s] running egg_info
+[2.261s] writing rover.egg-info/PKG-INFO
+[2.262s] writing dependency_links to rover.egg-info/dependency_links.txt
+[2.262s] writing entry points to rover.egg-info/entry_points.txt
+[2.262s] writing requirements to rover.egg-info/requires.txt
+[2.265s] writing top-level names to rover.egg-info/top_level.txt
+[2.265s] reading manifest file 'rover.egg-info/SOURCES.txt'
+[2.268s] writing manifest file 'rover.egg-info/SOURCES.txt'
+[2.269s] running build_ext
+[2.269s] Creating /home/danielgrioja/LAB/Rover_Lab/install/rover/lib/python3.10/site-packages/rover.egg-link (link to .)
+[2.271s] Installing my_rover_driver script to /home/danielgrioja/LAB/Rover_Lab/install/rover/lib/rover
+[2.271s] Installing rover_ros2 script to /home/danielgrioja/LAB/Rover_Lab/install/rover/lib/rover
+[2.273s] 
+[2.273s] Installed /home/danielgrioja/LAB/Rover_Lab/build/rover
+[2.273s] running symlink_data
+[2.317s] Invoked command in '/home/danielgrioja/LAB/Rover_Lab/build/rover' returned '0': PYTHONPATH=/home/danielgrioja/LAB/Rover_Lab/build/rover/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danielgrioja/LAB/Rover_Lab/install/rover/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/danielgrioja/LAB/Rover_Lab/build/rover/build --no-deps symlink_data
