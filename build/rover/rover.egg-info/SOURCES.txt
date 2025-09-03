@@ -5,6 +5,7 @@ launch/rover_launch.py
 resource/my_rover.urdf
 resource/rover
 rover/__init__.py
+rover/camera.py
 rover/my_rover_driver.py
 rover/rover_ros2.py
 rover.egg-info/PKG-INFO

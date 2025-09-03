@@ -31,11 +31,19 @@ def generate_launch_description():
         name='rover_ros2',
         output='screen'
     )
+    # Camera Publisher node
+    camera_publisher_node = Node(
+        package='rover',
+        executable='camera_publisher',
+        name='camera_publisher',
+        output='screen'
+    )
 
     return LaunchDescription([
         webots,
         my_rover_driver,
         rover_ros2_node,
+        camera_publisher_node,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
                 target_action=webots,
