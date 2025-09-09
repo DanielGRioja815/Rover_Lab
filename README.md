@@ -4,15 +4,17 @@ Este repositorio contiene el código y los recursos necesarios para el desarroll
 
 ## Contenido
 
-- **src/**: Código fuente del proyecto.
-- **docs/**: Documentación técnica y guías de uso.
-- **tests/**: Pruebas automatizadas para garantizar la funcionalidad del sistema.
-- **assets/**: Recursos como imágenes, modelos 3D y otros archivos necesarios.
+- **my_first_simulation/**: Archivos realizados en el tutorial del simulador de Webots
+- **my_package/**: Archivos realizados en el tutorial del simulador de Webots + ROS2 
+- **rover/**: Carpeta que contiene el proyecto 
 
 ## Requisitos
+- Ubuntu 22.04 LTS: https://releases.ubuntu.com/jammy/ 
+- ROS2 Humble: https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html 
+- Simulador Webots + ROS2: https://docs.ros.org/en/humble/Tutorials/Advanced/Simulators/Webots/Simulation-Webots.html 
+- Python y C
+- rqt_image_view (herramienta de ros2 para ver imagenes que estan siendo publicadas en algun topico): sudo apt install ros-humble-rqt-image-view
 
-- Python 3.8 o superior
-- Bibliotecas necesarias (ver `requirements.txt`)
 
 ## Instalación
 
@@ -21,22 +23,30 @@ Este repositorio contiene el código y los recursos necesarios para el desarroll
     git clone https://github.com/tu_usuario/Rover_Lab.git
     cd Rover_Lab
     ```
-2. Instala las dependencias:
-    ```bash
-    pip install -r requirements.txt
-    ```
+2. Instala Webots
+    
 
 ## Uso
 
 1. Ejecuta el simulador:
-    ```bash
-    python src/simulator.py
-    ```
-2. Sigue las instrucciones en pantalla para controlar el rover.
+    - cd Rover_Lab/
+    - colcon build --symlink-install
+    - source install/local_setup.bash
+    - ros2 launch rover rover_launch.py
+2. Para visualizar la camara: 
+    - rqt_image_view
+    - Seleccionar el topico camera/image_raw
 
 ## Contribuciones
 
 ¡Las contribuciones son bienvenidas! Por favor, abre un issue o envía un pull request con tus mejoras.
+Para ello se les recomienda saber lo basico de ROS2 (que son los topicos, nodos, workspace), saber usar el simulador webots (sin ROS2) y saber usarlo con ROS2. 
+
+##  Links tutoriales: 
+
+ROS 2 (tutoriales basicos): https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools.html 
+Webots: https://cyberbotics.com/doc/guide/tutorials 
+Webots + ROS2: https://docs.ros.org/en/humble/Tutorials/Advanced/Simulators/Webots/Simulation-Webots.html 
 
 ## Licencia
 
