@@ -1,0 +1,8 @@
+# Ignore build artifacts
+/build/
+/install/
+/log/
+
+# Ignore tutorials files
+/my_first_simulation/
+/my_package/
