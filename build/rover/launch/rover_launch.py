@@ -1,1 +1,0 @@
-/home/danielgrioja/LAB/Rover_Lab/rover/launch/rover_launch.py

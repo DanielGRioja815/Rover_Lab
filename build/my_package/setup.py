@@ -1,1 +1,0 @@
-/home/danielgrioja/LAB/Rover_Lab/my_package/setup.py
