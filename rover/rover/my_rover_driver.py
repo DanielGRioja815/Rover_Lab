@@ -40,10 +40,11 @@ class MyRoverDriver:
 
     def step(self):
         rclpy.spin_once(self.__node, timeout_sec=0)
-        forward_speed = self.__target_twist.linear.x
-        angular_speed = self.__target_twist.angular.z
+        # Invierte el signo de forward_speed y angular_speed
+        forward_speed = -self.__target_twist.linear.x
+        angular_speed = -self.__target_twist.angular.z
 
-        command_motor_left = (- forward_speed - angular_speed * HALF_DISTANCE_BETWEEN_WHEELS) / WHEEL_RADIUS
+        command_motor_left = (forward_speed - angular_speed * HALF_DISTANCE_BETWEEN_WHEELS) / WHEEL_RADIUS
         command_motor_right = (forward_speed + angular_speed * HALF_DISTANCE_BETWEEN_WHEELS) / WHEEL_RADIUS
 
         self.__left_motor_1.setVelocity(command_motor_left)

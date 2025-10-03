@@ -6,3 +6,6 @@
 # Ignore tutorials files
 /my_first_simulation/
 /my_package/
+
+*/.vscode/
+*.wbproj
