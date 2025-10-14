@@ -44,18 +44,15 @@ class RoverRos2(Node):
 
         command_msg = Twist()
         if self.obstacle_detected:
-            if self.turn_left and self.turn_left:
+            if self.turn_left:
                 command_msg.linear.x = -MAX_SPEED * 0.1
                 command_msg.angular.z = 0.0
-            elif self.turn_left:
-                command_msg.linear.x = MAX_SPEED * 0.1
-                command_msg.angular.z = 1.0                
             else:
                 command_msg.linear.x = MAX_SPEED * 0.1
-                command_msg.angular.z = -1.0
+                command_msg.angular.z = 0.0
         else:
-            command_msg.linear.x = MAX_SPEED * 0.1
-            command_msg.angular.z = 0.0
+            command_msg.linear.x = 0.0
+            command_msg.angular.z = MAX_SPEED * 0.1
         self.publisher.publish(command_msg)
 
 
