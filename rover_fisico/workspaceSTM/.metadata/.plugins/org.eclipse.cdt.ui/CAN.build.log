@@ -1,0 +1,10 @@
+16:53:38 **** Incremental Build of configuration Debug for project CAN ****
+make -j16 all 
+arm-none-eabi-size  CAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19880	    112	   2192	  22184	   56a8	CAN.elf
+Finished building: default.size.stdout
+ 
+
+16:53:38 Build Finished. 0 errors, 0 warnings. (took 70ms)
+
