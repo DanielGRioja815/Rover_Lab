@@ -1,0 +1,3 @@
+[console_scripts]
+velocidad_motores = ctrl_vel_motores.velocidad_motores:main
+velocidad_teclado = ctrl_vel_motores.velocidad_teclado:main

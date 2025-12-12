@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/ctrl_vel_motores/ctrl_vel_motores.egg-info/PKG-INFO
+writing dependency_links to ../../build/ctrl_vel_motores/ctrl_vel_motores.egg-info/dependency_links.txt
+writing entry points to ../../build/ctrl_vel_motores/ctrl_vel_motores.egg-info/entry_points.txt
+writing requirements to ../../build/ctrl_vel_motores/ctrl_vel_motores.egg-info/requires.txt
+writing top-level names to ../../build/ctrl_vel_motores/ctrl_vel_motores.egg-info/top_level.txt
+reading manifest file '../../build/ctrl_vel_motores/ctrl_vel_motores.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/ctrl_vel_motores/ctrl_vel_motores.egg-info/SOURCES.txt'
+running build
+running build_py
+copying ctrl_vel_motores/velocidad_teclado.py -> /home/javier/ROVER_V1/build/ctrl_vel_motores/build/lib/ctrl_vel_motores
+copying ctrl_vel_motores/velocidad_motores.py -> /home/javier/ROVER_V1/build/ctrl_vel_motores/build/lib/ctrl_vel_motores
+running install
+running install_lib
+copying /home/javier/ROVER_V1/build/ctrl_vel_motores/build/lib/ctrl_vel_motores/velocidad_teclado.py -> /home/javier/ROVER_V1/install/ctrl_vel_motores/lib/python3.12/site-packages/ctrl_vel_motores
+copying /home/javier/ROVER_V1/build/ctrl_vel_motores/build/lib/ctrl_vel_motores/velocidad_motores.py -> /home/javier/ROVER_V1/install/ctrl_vel_motores/lib/python3.12/site-packages/ctrl_vel_motores
+byte-compiling /home/javier/ROVER_V1/install/ctrl_vel_motores/lib/python3.12/site-packages/ctrl_vel_motores/velocidad_teclado.py to velocidad_teclado.cpython-312.pyc
+byte-compiling /home/javier/ROVER_V1/install/ctrl_vel_motores/lib/python3.12/site-packages/ctrl_vel_motores/velocidad_motores.py to velocidad_motores.cpython-312.pyc
+running install_data
+copying package.xml -> /home/javier/ROVER_V1/install/ctrl_vel_motores/share/ctrl_vel_motores
+running install_egg_info
+removing '/home/javier/ROVER_V1/install/ctrl_vel_motores/lib/python3.12/site-packages/ctrl_vel_motores-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/ctrl_vel_motores/ctrl_vel_motores.egg-info to /home/javier/ROVER_V1/install/ctrl_vel_motores/lib/python3.12/site-packages/ctrl_vel_motores-0.0.0-py3.12.egg-info
+running install_scripts
+Installing velocidad_motores script to /home/javier/ROVER_V1/install/ctrl_vel_motores/lib/ctrl_vel_motores
+Installing velocidad_teclado script to /home/javier/ROVER_V1/install/ctrl_vel_motores/lib/ctrl_vel_motores
+writing list of installed files to '/home/javier/ROVER_V1/build/ctrl_vel_motores/install.log'

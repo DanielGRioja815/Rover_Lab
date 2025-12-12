@@ -1,0 +1,26 @@
+[0.493s] Invoking command in '/home/javier/ROVER_V1/src/ctrl_vel_motores': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/javier/ROVER_V1/build/ctrl_vel_motores/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/javier/ROVER_V1/install/ctrl_vel_motores/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ctrl_vel_motores build --build-base /home/javier/ROVER_V1/build/ctrl_vel_motores/build install --record /home/javier/ROVER_V1/build/ctrl_vel_motores/install.log --single-version-externally-managed install_data
+[0.657s] running egg_info
+[0.667s] writing ../../build/ctrl_vel_motores/ctrl_vel_motores.egg-info/PKG-INFO
+[0.667s] writing dependency_links to ../../build/ctrl_vel_motores/ctrl_vel_motores.egg-info/dependency_links.txt
+[0.667s] writing entry points to ../../build/ctrl_vel_motores/ctrl_vel_motores.egg-info/entry_points.txt
+[0.667s] writing requirements to ../../build/ctrl_vel_motores/ctrl_vel_motores.egg-info/requires.txt
+[0.668s] writing top-level names to ../../build/ctrl_vel_motores/ctrl_vel_motores.egg-info/top_level.txt
+[0.689s] reading manifest file '../../build/ctrl_vel_motores/ctrl_vel_motores.egg-info/SOURCES.txt'
+[0.689s] adding license file 'LICENSE'
+[0.689s] writing manifest file '../../build/ctrl_vel_motores/ctrl_vel_motores.egg-info/SOURCES.txt'
+[0.689s] running build
+[0.689s] running build_py
+[0.689s] copying ctrl_vel_motores/velocidad_motores.py -> /home/javier/ROVER_V1/build/ctrl_vel_motores/build/lib/ctrl_vel_motores
+[0.689s] running install
+[0.694s] running install_lib
+[0.704s] copying /home/javier/ROVER_V1/build/ctrl_vel_motores/build/lib/ctrl_vel_motores/velocidad_motores.py -> /home/javier/ROVER_V1/install/ctrl_vel_motores/lib/python3.12/site-packages/ctrl_vel_motores
+[0.704s] byte-compiling /home/javier/ROVER_V1/install/ctrl_vel_motores/lib/python3.12/site-packages/ctrl_vel_motores/velocidad_motores.py to velocidad_motores.cpython-312.pyc
+[0.705s] running install_data
+[0.705s] running install_egg_info
+[0.717s] removing '/home/javier/ROVER_V1/install/ctrl_vel_motores/lib/python3.12/site-packages/ctrl_vel_motores-0.0.0-py3.12.egg-info' (and everything under it)
+[0.717s] Copying ../../build/ctrl_vel_motores/ctrl_vel_motores.egg-info to /home/javier/ROVER_V1/install/ctrl_vel_motores/lib/python3.12/site-packages/ctrl_vel_motores-0.0.0-py3.12.egg-info
+[0.717s] running install_scripts
+[0.791s] Installing velocidad_motores script to /home/javier/ROVER_V1/install/ctrl_vel_motores/lib/ctrl_vel_motores
+[0.791s] Installing velocidad_teclado script to /home/javier/ROVER_V1/install/ctrl_vel_motores/lib/ctrl_vel_motores
+[0.791s] writing list of installed files to '/home/javier/ROVER_V1/build/ctrl_vel_motores/install.log'
+[0.809s] Invoked command in '/home/javier/ROVER_V1/src/ctrl_vel_motores' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/javier/ROVER_V1/build/ctrl_vel_motores/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/javier/ROVER_V1/install/ctrl_vel_motores/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ctrl_vel_motores build --build-base /home/javier/ROVER_V1/build/ctrl_vel_motores/build install --record /home/javier/ROVER_V1/build/ctrl_vel_motores/install.log --single-version-externally-managed install_data
