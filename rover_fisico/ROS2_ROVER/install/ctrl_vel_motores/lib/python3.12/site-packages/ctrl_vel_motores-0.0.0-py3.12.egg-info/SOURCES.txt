@@ -10,6 +10,8 @@ setup.py
 ../../build/ctrl_vel_motores/ctrl_vel_motores.egg-info/top_level.txt
 ../../build/ctrl_vel_motores/ctrl_vel_motores.egg-info/zip-safe
 ctrl_vel_motores/__init__.py
+ctrl_vel_motores/comando_teclado.py
+ctrl_vel_motores/velocidad_direccion.py
 ctrl_vel_motores/velocidad_motores.py
 ctrl_vel_motores/velocidad_teclado.py
 resource/ctrl_vel_motores

@@ -26,6 +26,8 @@ setup(
         'console_scripts': [
             'velocidad_teclado = ctrl_vel_motores.velocidad_teclado:main',
             'velocidad_motores = ctrl_vel_motores.velocidad_motores:main',
+            'velocidad_direccion = ctrl_vel_motores.velocidad_direccion:main',
+            'comando_teclado = ctrl_vel_motores.comando_teclado:main',
         ],
     },
 )
