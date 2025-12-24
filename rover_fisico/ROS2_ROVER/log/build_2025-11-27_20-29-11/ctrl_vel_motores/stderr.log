@@ -1,5 +1,0 @@
-  File "/home/javier/ROVER_V1/install/ctrl_vel_motores/lib/python3.12/site-packages/ctrl_vel_motores/velocidad_teclado.py", line 24
-    self.get_logger().info(f'Velocidad: ' {vel})
-                           ^^^^^^^^^^^^^^^^^^^^
-SyntaxError: invalid syntax. Perhaps you forgot a comma?
-

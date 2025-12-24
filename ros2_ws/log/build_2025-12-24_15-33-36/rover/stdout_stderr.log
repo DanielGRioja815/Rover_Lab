@@ -1,0 +1,50 @@
+running egg_info
+creating ../../../build/rover/rover.egg-info
+writing ../../../build/rover/rover.egg-info/PKG-INFO
+writing dependency_links to ../../../build/rover/rover.egg-info/dependency_links.txt
+writing entry points to ../../../build/rover/rover.egg-info/entry_points.txt
+writing requirements to ../../../build/rover/rover.egg-info/requires.txt
+writing top-level names to ../../../build/rover/rover.egg-info/top_level.txt
+writing manifest file '../../../build/rover/rover.egg-info/SOURCES.txt'
+reading manifest file '../../../build/rover/rover.egg-info/SOURCES.txt'
+writing manifest file '../../../build/rover/rover.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build
+creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib
+creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib/rover
+copying rover/__init__.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib/rover
+copying rover/my_rover_driver.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib/rover
+copying rover/camera.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib/rover
+copying rover/rover_ros2.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib/rover
+running install
+running install_lib
+creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover
+copying /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib/rover/__init__.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover
+copying /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib/rover/my_rover_driver.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover
+copying /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib/rover/camera.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover
+copying /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib/rover/rover_ros2.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover
+byte-compiling /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover/my_rover_driver.py to my_rover_driver.cpython-312.pyc
+byte-compiling /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover/camera.py to camera.cpython-312.pyc
+byte-compiling /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover/rover_ros2.py to rover_ros2.cpython-312.pyc
+running install_data
+creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/ament_index
+creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/ament_index/resource_index
+creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/ament_index/resource_index/packages
+copying resource/rover -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/ament_index/resource_index/packages
+creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/rover/launch
+copying launch/rover_launch.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/rover/launch
+copying launch/rover_launch2.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/rover/launch
+creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/rover/worlds
+copying worlds/4_wheeled_robot.wbt -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/rover/worlds
+creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/rover/resource
+copying resource/my_rover.urdf -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/rover/resource
+copying package.xml -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/rover
+running install_egg_info
+Copying ../../../build/rover/rover.egg-info to /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover-0.0.0-py3.12.egg-info
+running install_scripts
+Installing camera_publisher script to /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/rover
+Installing my_rover_driver script to /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/rover
+Installing rover_ros2 script to /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/rover
+writing list of installed files to '/home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/install.log'

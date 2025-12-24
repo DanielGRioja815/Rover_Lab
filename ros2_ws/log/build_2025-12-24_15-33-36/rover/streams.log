@@ -1,0 +1,52 @@
+[0.883s] Invoking command in '/home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/src/simulador/rover_simulador': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/rover build --build-base /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build install --record /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/install.log --single-version-externally-managed install_data
+[1.079s] running egg_info
+[1.079s] creating ../../../build/rover/rover.egg-info
+[1.094s] writing ../../../build/rover/rover.egg-info/PKG-INFO
+[1.094s] writing dependency_links to ../../../build/rover/rover.egg-info/dependency_links.txt
+[1.094s] writing entry points to ../../../build/rover/rover.egg-info/entry_points.txt
+[1.094s] writing requirements to ../../../build/rover/rover.egg-info/requires.txt
+[1.094s] writing top-level names to ../../../build/rover/rover.egg-info/top_level.txt
+[1.094s] writing manifest file '../../../build/rover/rover.egg-info/SOURCES.txt'
+[1.125s] reading manifest file '../../../build/rover/rover.egg-info/SOURCES.txt'
+[1.126s] writing manifest file '../../../build/rover/rover.egg-info/SOURCES.txt'
+[1.126s] running build
+[1.126s] running build_py
+[1.126s] creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build
+[1.126s] creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib
+[1.126s] creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib/rover
+[1.126s] copying rover/__init__.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib/rover
+[1.126s] copying rover/my_rover_driver.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib/rover
+[1.126s] copying rover/camera.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib/rover
+[1.126s] copying rover/rover_ros2.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib/rover
+[1.126s] running install
+[1.131s] running install_lib
+[1.147s] creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover
+[1.147s] copying /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib/rover/__init__.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover
+[1.147s] copying /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib/rover/my_rover_driver.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover
+[1.147s] copying /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib/rover/camera.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover
+[1.147s] copying /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build/lib/rover/rover_ros2.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover
+[1.147s] byte-compiling /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover/__init__.py to __init__.cpython-312.pyc
+[1.148s] byte-compiling /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover/my_rover_driver.py to my_rover_driver.cpython-312.pyc
+[1.148s] byte-compiling /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover/camera.py to camera.cpython-312.pyc
+[1.148s] byte-compiling /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover/rover_ros2.py to rover_ros2.cpython-312.pyc
+[1.149s] running install_data
+[1.149s] creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/ament_index
+[1.149s] creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/ament_index/resource_index
+[1.149s] creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/ament_index/resource_index/packages
+[1.149s] copying resource/rover -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/ament_index/resource_index/packages
+[1.149s] creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/rover/launch
+[1.149s] copying launch/rover_launch.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/rover/launch
+[1.149s] copying launch/rover_launch2.py -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/rover/launch
+[1.149s] creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/rover/worlds
+[1.149s] copying worlds/4_wheeled_robot.wbt -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/rover/worlds
+[1.149s] creating /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/rover/resource
+[1.149s] copying resource/my_rover.urdf -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/rover/resource
+[1.150s] copying package.xml -> /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/share/rover
+[1.150s] running install_egg_info
+[1.166s] Copying ../../../build/rover/rover.egg-info to /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages/rover-0.0.0-py3.12.egg-info
+[1.166s] running install_scripts
+[1.266s] Installing camera_publisher script to /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/rover
+[1.266s] Installing my_rover_driver script to /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/rover
+[1.266s] Installing rover_ros2 script to /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/rover
+[1.266s] writing list of installed files to '/home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/install.log'
+[1.287s] Invoked command in '/home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/src/simulador/rover_simulador' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/install/rover/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/rover build --build-base /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/build install --record /home/danielgrioja/Proyectos/Rover_Lab/ros2_ws/build/rover/install.log --single-version-externally-managed install_data
